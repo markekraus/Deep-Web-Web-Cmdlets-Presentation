@@ -1,6 +1,6 @@
 $DemoBlock = {
   $params = @{
-    Uri = 'http://127.0.0.1:8083/Get'
+    Uri = 'http://127.0.0.1:8083/'
   }
   $Result = Invoke-WebRequest @Params
   '-------------------------'
