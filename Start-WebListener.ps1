@@ -1,6 +1,8 @@
 [CmdletBinding()]
 param()
 
+function prompt { 'PS> ' }
+
 $WebListenerPath = Join-Path $PSScriptRoot 'WebListener'
 $PublishPath = Join-Path $WebListenerPath 'Publish'
 $PSModulesPath = Join-Path $WebListenerPath 'PSModules'

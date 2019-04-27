@@ -26,7 +26,7 @@ public class TrustAllCerts {
   [System.Net.ServicePointManager]::ServerCertificateValidationCallback = [TrustAllCerts]::TrustAllCertsCallback
 
   [System.Net.ServicePointManager]::SecurityProtocol =
-    [System.Net.ServicePointManager]::SecurityProtocol -bxor
+    [System.Net.ServicePointManager]::SecurityProtocol -bor
     [System.Net.SecurityProtocolType]::Tls12
   '-------------------------'
   'PowerShell {0}:' -f $PSVersionTable.PSVersion
